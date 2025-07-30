@@ -4,7 +4,7 @@
     box-sizing: border-box;
 }
 body{
-   background:#8ba2b4;
+   background:#e5b107c1;
    
    
 }
@@ -26,7 +26,7 @@ section:after{
     width: 100%;
     height: 100%;
     z-index: 10000;
-  /* background-color:#4e06369b;*/
+   background-color:#31455da4;
     mix-blend-mode: color;
 
 }
@@ -62,7 +62,14 @@ section img{
 }
 .lua {
   position: absolute;
-  width: 500px;
-  height: 400px;
+  width: 600px;
+  height: 500px;
  
 }
+.ceu {
+  position: absolute;
+  transition: transform 0.1s linear;
+  will-change: transform;
+}
+
+
