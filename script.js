@@ -4,6 +4,8 @@ const ceu = document.querySelector('.ceu')
 
 const lua = document.querySelector('.lua')
 
+const montanhaNeve = document.querySelector('.montanhaNeve')
+
 const montanha = document.querySelector('.montanha')
 
 const estrada = document.querySelector('.estrada')
@@ -18,16 +20,14 @@ document.addEventListener('scroll', function() {
      /*ceu.style.transform = `translateY(${value * 0.5}%)`;
     
    ceuDia.style.transform = `translateY(${-value * 0.4}%)`;*/
+     montanha.style.top = +value * 0.2 +'%';
+       montanha.style.transform = `translatex(${-value * 0.2}%)`;
 
+     montanhaNeve.style.transform = `translatey(${value}px)`;
+      montanhaNeve.style.top = +value * 0.1 +'%';
 
-    lua.style.transform = `translatex(${+value * 0.2}%)`;
-
-     lua.style.top = +value * 0.2 +'%';
-
-     
-     montanha.style.transform = `translateY(${value}px)`;
-
-   const scale = 1 + value * 0.0005; // aumenta o zoom conforme o scroll
+   const scale = 1 + value * 0.0002; 
+   // aumenta o zoom conforme o scroll
 estrada.style.transform = `translateY(${value * 0.1}px) scale(${scale})`;
 
     texto.style.top = value * 0.3 + '%'; 
