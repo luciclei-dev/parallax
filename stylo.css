@@ -27,7 +27,7 @@ section:after{
     width: 100%;
     height: 100%;
     z-index: 10000;
-   /*background-color:;*/
+   background-color:rgba(128, 143, 140, 0);
     mix-blend-mode: color;
 
 }
@@ -61,16 +61,12 @@ section img{
 .estrada{
     z-index: 1;
 }
-.lua {
-  position: absolute;
-  width: 600px;
-  height: 500px;
- 
-}
+
 .ceu {
   position: absolute;
-  transition: transform 0.1s linear;
+  transition: transform 0.5s linear;
   will-change: transform;
+  top: -20%;
 }
 
 .frase{
